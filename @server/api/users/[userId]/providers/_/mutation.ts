@@ -1,9 +1,9 @@
-import { usersProviders } from '~~/@server/db';
+import { userAuthProvidersTable } from '~~/@server/db';
 import type { DB } from '~~/@server/db';
 
 export function upsertUserProvider(db: DB, injectorId: string, auth: Auth) {
   return db
-    .insert(usersProviders)
+    .insert(userAuthProvidersTable)
     .values({
       injectorId,
       type: auth.provider_type,
@@ -16,9 +16,9 @@ export function upsertUserProvider(db: DB, injectorId: string, auth: Auth) {
         email: auth.email,
       },
       target: [
-        // `inject_id` と `type` は複合ユニーク
-        usersProviders.injectorId,
-        usersProviders.type,
+        // `inject_id` と `type` は複合ユニークであるため
+        userAuthProvidersTable.injectorId,
+        userAuthProvidersTable.type,
       ],
     });
 }

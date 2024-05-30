@@ -97,7 +97,7 @@ bun web-db:preview
 ### デプロイ
 
 ```sh
-bun deploy
+bun run deploy
 ```
 
 #### Web のみ

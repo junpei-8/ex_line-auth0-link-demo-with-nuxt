@@ -5,16 +5,16 @@ import { cuid } from './core/cuid';
 import type { DBSchema } from './core/schema';
 import { usersTable } from './users';
 
-export type UserProvidersSchema = DBSchema<
-  typeof usersProvidersTableName,
-  typeof usersProviders,
-  typeof usersProvidersRelations
+export type UserAuthProvidersSchema = DBSchema<
+  typeof userAuthProvidersTableName,
+  typeof userAuthProvidersTable,
+  typeof userAuthProvidersRelations
 >;
 
-export const usersProvidersTableName = 'user_providers';
+export const userAuthProvidersTableName = 'user_auth_providers';
 
-export const usersProviders = sqliteTable(
-  usersProvidersTableName,
+export const userAuthProvidersTable = sqliteTable(
+  userAuthProvidersTableName,
   {
     /**
      * @type {uuid}
@@ -89,17 +89,20 @@ export const usersProviders = sqliteTable(
      * - 複数のアカウントが同じプロバイダーを持つことはできない
      */
     InjectorIdAndTypeUx: uniqueIndex(
-      `${usersProvidersTableName}_injector_id_and_type_ux`,
+      `${userAuthProvidersTableName}_injector_id_and_type_ux`,
     ).on(table.injectorId, table.type),
   }),
 );
 
-export const usersProvidersRelations = relations(usersProviders, ({ one }) => ({
-  /**
-   * このユーザープロバイダーテーブルはユーザーに対して複数紐づくことができる。(One to One)
-   */
-  injector: one(usersTable, {
-    fields: [usersProviders.injectorId],
-    references: [usersTable.id],
+export const userAuthProvidersRelations = relations(
+  userAuthProvidersTable,
+  ({ one }) => ({
+    /**
+     * このユーザープロバイダーテーブルはユーザーに対して複数紐づくことができる。(One to One)
+     */
+    injector: one(usersTable, {
+      fields: [userAuthProvidersTable.injectorId],
+      references: [usersTable.id],
+    }),
   }),
-}));
+);

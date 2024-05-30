@@ -26,13 +26,4 @@ export default defineEventHandler(async (event) => {
   upsertUserProviderAsync(db, userId, auth);
 
   return createUsersQueryResponse(user);
-
-  // try {
-  //   // Response を返却する
-
-  //   // ↓ Response 後に行う処理
-  // } finally {
-  //   // レスポンス返却後 Auth0 のユーザープロバイダー情報を更新
-  //   upsertUserProvider(db, userId, auth).catch(console.error);
-  // }
 });

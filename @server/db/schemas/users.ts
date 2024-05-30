@@ -2,7 +2,7 @@ import { relations, sql } from 'drizzle-orm';
 import { sqliteTable, text } from 'drizzle-orm/sqlite-core';
 import { oauthId } from './core/oauth';
 import type { DBSchema } from './core/schema';
-import { usersProviders } from './user_providers';
+import { userAuthProvidersTable } from './user_auth_providers';
 
 export type UsersSchema = DBSchema<
   typeof usersTableName,
@@ -68,5 +68,5 @@ export const usersRelations = relations(usersTable, ({ many }) => ({
   /**
    * このユーザーテーブルは企業に対して複数紐づくことができる。(One to Many)
    */
-  providers: many(usersProviders),
+  authProviders: many(userAuthProvidersTable),
 }));
