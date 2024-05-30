@@ -52,27 +52,6 @@ bun web-db:dev
 
 <br />
 
-### DB 開発
-
-#### マイグレーションファイルの生成
-
-```sh
-bun web-db:generate
-```
-
-#### マイグレーションの実行
-
-```sh
-bun web-db:migrate <環境>
-
-# 例
-bun web-db:migrate dev
-```
-
-＊ マイグレーションは `bun dev` や `bun web-db:dev` で自動的に実行されるので、手動で実行する機会は少ないかもしれません。
-
-<br />
-
 ### 擬似本番環境の起動
 
 ```sh
@@ -112,6 +91,27 @@ bun web:deploy
 ```sh
 bun web-db:deploy
 ```
+
+<br />
+
+### DB 開発
+
+#### マイグレーションファイルの生成
+
+```sh
+bun web-db:generate
+```
+
+#### マイグレーションの実行
+
+```sh
+bun web-db:migrate <環境>
+
+# 例
+bun web-db:migrate dev
+```
+
+＊ マイグレーションは `bun dev` や `bun web-db:dev` で自動的に実行されるので、手動で実行する機会は少ないかもしれません。
 
 <br />
 
