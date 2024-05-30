@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "syler.sass-indented",
+    "vunguyentuan.vscode-css-variables",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "PKief.material-icon-theme",
+    "streetsidesoftware.code-spell-checker"
+  ],
+  "unwantedRecommendations": [
+    "Vue.vscode-typescript-vue-plugin",
+    "octref.vetur"
+  ]
+}

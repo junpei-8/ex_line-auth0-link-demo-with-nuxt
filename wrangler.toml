@@ -1,0 +1,8 @@
+name = "line-auth0-link-demo-with-nuxt"
+pages_build_output_dir = "./dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "line-auth0-link-demo-with-nuxt"
+database_id = "82dbecf7-e916-425f-9273-59405145da56"
+migrations_dir = './@server/db/migrations'

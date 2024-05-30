@@ -1,0 +1,37 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  "editor.detectIndentation": false,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+
+  "explorer.sortOrderLexicographicOptions": "unicode",
+
+  "material-icon-theme.folders.associations": {
+    "@client": "client",
+    "@server": "server",
+    "[core]": "core",
+    "^context": "context",
+    "^env": "environment",
+    "_": "base",
+    "_base": "base",
+    "shell": "scripts"
+  },
+
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  "eslint.validate": ["javascript", "typescript", "vue"],
+  "eslint.useFlatConfig": false,
+
+  "stylelint.validate": ["css", "scss", "svg", "vue"],
+
+  "prettier.documentSelectors": ["**/*.svg"],
+
+  "cSpell.userWords": []
+}

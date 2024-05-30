@@ -1,0 +1,21 @@
+# Private directories
+cert/
+dist/
+.base/
+.data/
+.cache/
+.output/
+
+# Logs
+log/
+*.log
+
+# Node dependencies
+node_modules/
+
+# Nuxt
+.nuxt/
+.nitro/
+
+# Drizzle
+migrations/

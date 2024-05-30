@@ -3,6 +3,7 @@
 .data
 .nuxt
 .nitro
+.wrangler
 .cache
 dist
 
@@ -20,5 +21,3 @@ logs
 
 # Local env files
 .env
-.env.*
-!.env.example
