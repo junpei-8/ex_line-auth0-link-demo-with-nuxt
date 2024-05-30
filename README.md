@@ -1,5 +1,25 @@
 # LINE Auth0 Link Demo With Nuxt
 
+**Repository**
+
+- [GitHub](https://github.com/junpei-8/line-auth0-link-demo-with-nuxt)
+
+**Published**
+
+- [Web](https://line-auth0-link-demo-with-nuxt.pages.dev)
+- [LIFF](https://liff.line.me/2005255316-w8rBNrbm)
+- <details><summary>Line Official Account</summary>
+   <br />
+   <img src="./_base/docs/images/readme/line-official-account-qr.png" alt=""
+  </details>
+
+**Development**
+
+- [Auth0](https://manage.auth0.com/dashboard/jp/line-auth0-link-demo-with-nuxt/users)
+- [LINE Developers](https://developers.line.biz/console/provider/2003246473)
+- [Cloudflare Workers & Pages](https://dash.cloudflare.com/274e66e8aa5b5102aa2fd7d58c519e5f/pages/view/line-auth0-link-demo-with-nuxt)
+- [Cloudflare D1](https://dash.cloudflare.com/274e66e8aa5b5102aa2fd7d58c519e5f/workers/d1/databases/82dbecf7-e916-425f-9273-59405145da56)
+
 <br />
 
 ## 🍀 必須環境
@@ -7,7 +27,7 @@
 ---
 
 - [Node >= 20.13.1](https://nodejs.org)
-- [Bun >= 1.0](https://bun.sh)
+- [Bun >= 1.0.25](https://bun.sh)
 
 > [!TIP]
 > No Docker 🥳

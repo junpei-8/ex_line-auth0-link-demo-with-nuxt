@@ -11,8 +11,8 @@
 3. [テナント作成画面](https://accounts.auth0.com/teams) に遷移し、テナントを作成します。
 
    <div style="display: flex; flex-direction: column; align-items: center; max-width: 400px;">
-     <img src="./images/auth0-starter-guide-tenants.png" />
-     <img src="./images/auth0-starter-guide-tenants2.png" />
+     <img src="./images/auth0-starter-guide/tenants-1.png" />
+     <img src="./images/auth0-starter-guide/tenants-2.png" />
     </div>
 
 <br />
@@ -24,11 +24,11 @@
 1. 前章で作成したテナントにログインし、左のタブから `Applications > Applications` に遷移します。
 
 2. `Default App` が既に作成されているので、クリックし編集画面に遷移します。
-   <img src="./images/auth0-starter-guide-app.png" style="max-width: 400px;" />
+   <img src="./images/auth0-starter-guide/app-1.png" style="max-width: 400px;" />
 
 3. `Domain`, `Client ID` が表示されているので、こちらをコピーして環境変数に書き加えます。
 
-    <img src="./images/auth0-starter-guide-app2.png" style="max-width: 400px;" />
+    <img src="./images/auth0-starter-guide/app-2.png" style="max-width: 400px;" />
 
    ```sh
    	# .env
@@ -43,13 +43,13 @@
 
 5. `Application Type` を `Single Page Application` に変更します
 
-   <img src="./images/auth0-starter-guide-app3.png" style="max-width: 400px;" />
+   <img src="./images/auth0-starter-guide/app-3.png" style="max-width: 400px;" />
 
 6. さらに、そのページのまま `Application URLs` のセクションに下スクロールします。
 
 7. `Allowed Callback URLs`, `Allowed Logout URLs`, `Allowed Web Origins` に、アプリケーションの URL を「開発用」と「本番用」の両方を必要に応じて追加します。
 
-   <img src="./images/auth0-starter-guide-app4.png" style="max-width: 400px;" />
+   <img src="./images/auth0-starter-guide/app-4.png" style="max-width: 400px;" />
 
    ※ 複数の URL を設定する場合は、`,`（カンマ）で区切ります。
    ※ Redirect を用いた認証を行いたい場合は `Allowed Login URLs` にも追加する必要があります。
@@ -72,7 +72,7 @@ Auth0 を用いた JWT 認証に関しては情報が結構少ないので、注
 
 2.  `Auth0 Management API` が既に作成されているので、クリックし編集画面に遷移します。
 
-    <img src="./images/auth0-starter-guide-api.png" style="max-width: 400px;" />
+    <img src="./images/auth0-starter-guide/api-1.png" style="max-width: 400px;" />
 
 3.  `Identifier` が表示されているので、こちらをコピーして環境変数に書き加えます。
 
